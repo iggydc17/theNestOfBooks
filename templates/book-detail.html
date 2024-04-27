@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/book-detail.css">
+    <link rel="stylesheet" href="../css/home-styles.css">
+    <link rel="stylesheet" href="../css/general-styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico/bookIco.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>The Nest of Books | Suggest Book</title>
+</head>
+<body>
+    <header>
+        <div id="title-and-name-container">
+            <div id="title">
+                <h1> <a href="../templates/home.html" title="Library The Nest Of Books">Library The Nest Of Books</a></h1>
+            </div>
+            <div id="user-name-container">
+                <nav id="user-navbar">
+                    <ul>
+                        <a href="../templates/favs.html"><li title="Favs">Favs</li></a>
+                        <a href="../templates/buys.html"><li title="Buys">Buys</li></a>
+                        <a href="../templates/cart.html"><li title="Cart">Cart</li></a>
+                        <a href="#"><li>Ignacio</li>!</a>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+        <nav id="navbar">
+            <ul>
+                <a href="../templates/home.html" title="Home"><li>Books Stock</li></a>
+                <a href="../templates/aboutUs.html" title="About Us"><li>About Us</li></a>
+                <a href="../templates/suggestBooksSection.html" title="Suggest a Book"><li>Suggest a Book</li></a>
+                <a href="../templates/contact.html" title="Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <div id="book-details">
+                <div id="img-container">
+                    <a href="#">
+                        <img id="book-image" alt="Book-Image" >
+                    </a>
+                </div>
+                <div id="book-text-details-container">
+                    <div id="title-and-star-container">
+                        <div><h2 id="book-title"></h2></div>
+                        <div class="star-symbol">☆</div>
+                    </div>
+                    <p id="book-author"></p>
+                    <p id="book-price"></p>
+                    <p id="book-year"></p>
+                    <p id="book-pages"></p>
+                    <p class="announcement">Free Shipping ✔</p>
+                    <p class="announcement">Free Return</p>
+                    <p class="days">30 days from when you receive it.</p>
+                    <div id="quantity-container">
+                        <label for="quantity-select" id="quantity-select-label">Quantity: &nbsp;</label>
+                        <select id="quantity-select"></select>
+                        <p id="book-quantity"></p>
+                    </div>
+                    <div id="buttons-container">
+                        <div><button id="buy-button">Buy Now</button></div>
+                        <div><button id="add-to-cart-button">Add To Cart</button></div>
+                    </div>    
+                </div>
+            </div>    
+            <div id="synopsis-container">
+                <h3 class="synopsis-title">Synopsis</h3>
+                <p id="book-synopsis"></p>
+            </div>
+            <div id="second-container">
+                <div id="other-books-container">
+                    <h3 class="other-products">Other Books</h3>
+                    <div id="other-books-cards">
+                        <!--card-->
+                    </div>
+                </div>
+                <div id="payment-methods">
+                    <p class="payment">Payment Methods</p>
+                    <div id="payment-option">
+                        <div>
+                            Credit Cards
+                        </div>
+                        <div class="payment-img">
+                            <img src="../img/website/master-card.png" alt="Master Card" title="Master Card">
+                            <img src="../img/website/visa.png" alt="Visa" title="Visa">
+                        </div>
+                    </div>    
+                    <div id="payment-option">
+                        <div>
+                            Debit Cards
+                        </div>
+                        <div class="payment-img">
+                            <img src="../img/website/jp-morgan.png" alt="JP Morgan" title="JP Morgan">
+                            <img src="../img/website/bank-of-america.png" alt="Bank of America" title="Bank of America" id="bank-of-america">
+                            <img src="../img/website/hsbc.png" alt="HSBC" title="HSBC">
+                            <img src="../img/website/master-card.png" alt="Master Card" title="Master Card">
+                            <img src="../img/website/visa.png" alt="Visa" title="Visa">
+                        </div>
+                    </div>          
+                    <div id="payment-option">
+                        <div>
+                            Others
+                        </div>
+                        <div class="payment-img">
+                            <img src="../img/website/btc.png" alt="Bitcoin" title="Bitcoin">
+                            <img src="../img/website/usdt.png" alt="USDT" title="USDT" class="usdt">
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        &copy; Library the Nest Of Books 
+    </footer>
+    
+    <script src="../js/book-detail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+</body>
+</html>

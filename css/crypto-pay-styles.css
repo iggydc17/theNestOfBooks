@@ -1,0 +1,153 @@
+#book-info-container {
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 50%;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 32px;
+}
+
+#book-payment-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 16px;
+}
+
+#crypto-type-container select{
+    color: #575757;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid rgb(65, 155, 65);
+    border-radius: 6px;
+    padding: 6px;
+    padding-left: 10px;
+
+    &:focus {
+        outline: none;
+        border: 2px solid rgb(65, 155, 65);
+    }
+}
+
+#crypto-type-container option {
+    color: #575757;
+    font-weight: bold;
+    padding: 6px;
+
+    &:hover {
+        background-color: rgb(65, 155, 65);
+        color: aliceblue;
+    }
+}
+
+#crypto-price a {
+    font-weight: bold;  
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: rgb(65, 155, 65);
+    }
+
+}
+
+#qr-and-address-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid rgb(65, 155, 65);
+    }
+}
+
+#qr-and-address-container img {
+    width: 186px;
+    height: 186px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+#address-and-copy-icon {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.bi-files {
+    color: rgb(65, 155, 65);
+    font-size: 24px;
+    margin-left: 12px;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(27, 88, 27);
+        font-weight: bold;
+    }
+}
+
+#crypto-address {
+    font-weight: bold;
+}
+
+#address {
+    font-weight: bold;
+    text-align: center;
+}
+
+#alert-address-message,
+#address-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5rem;
+}
+
+
+/* Purchase Summary ------------------------------------------------------------------------------------------------ */
+
+#purchase-summary-container {
+    z-index: 0;
+    width: 400px;
+    position: sticky;
+    top: 0; 
+    bottom: 0;
+    right: 48px;
+    margin-left: 50px;
+    background-color: hsl(0, 0%, 89%);
+    border-radius: 6px;
+    padding: 32px;
+    overflow-y: auto;
+}
+
+#purchase-summary-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+#product-shipping-text {
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 20px;
+}
+
+#product-title,
+#product-total {
+    margin-top: 32px;
+}
+
+#product-shipping-text {
+    font-weight: bold;
+    color: rgb(65, 155, 65);
+}

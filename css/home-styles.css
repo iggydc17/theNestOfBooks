@@ -1,0 +1,255 @@
+#books-search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-var,
+#search-button,
+#sort-options {
+    margin-right: 10px;
+}
+
+#books-search-form input{
+    width: 30rem;
+    height: 36px;
+    font-size: 16px;
+    color: #575757;
+    padding-left: 14px;
+    border-radius: 6px;
+    border: 1px solid rgb(96, 156, 96);
+
+    &:focus {
+        outline: none;
+        border: 2px solid rgb(96, 156, 96);
+    }
+}
+
+#back-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(65, 155, 65);
+    border: 1px solid rgb(65, 155, 65);
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: hsla(120, 41%, 43%, 0.397);
+        color: aliceblue;
+    }
+}
+
+.button-general{
+    background-color: rgb(65, 155, 65);
+    color: aliceblue;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 14px;
+    margin-left: -2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: hsl(120, 24%, 29%);
+    }
+    &:active {
+        background-color: hsl(120, 24%, 59%);
+    }
+}
+
+.labels-general{
+    color: rgb(65, 155, 65);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#books-search-form select{
+    height: 38px;
+    color: #575757;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid rgb(96, 156, 96);
+    border-radius: 6px;
+    padding: 6px;
+    padding-left: 10px;
+    margin-left: 6px;
+
+    &:focus {
+        outline: none;
+        border: 2px solid rgb(96, 156, 96);
+    }
+}
+
+#books-search-form select option {
+    color: #575757;
+    font-weight: bold;
+    padding: 6px;
+
+    &:hover {
+        background-color: hsl(120, 24%, 49%);
+        color: aliceblue;
+    }
+}
+
+.main-title {
+    margin-left: 2px;
+    margin-bottom: 32px;
+}
+
+#no-results-message-container {
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 56px 124px;
+    margin: 0 auto;
+    width: 36em; 
+    text-align: left; 
+}
+
+#no-results-message-container h2 {
+    color: rgb(65, 155, 65);
+    margin: 0; 
+}
+
+#no-results-message-container ul {
+    font-size: 18px;
+    margin-top: 32px; 
+    padding-left: 0; 
+}
+
+#no-results-message-container ul li {
+    margin-top: 8px; 
+    list-style-type: none; 
+}
+
+#no-results-message-container ul li::before {
+    content: "•"; 
+    color: rgb(65, 155, 65);
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+    margin-right: 0.5em; 
+}
+
+#no-results-message-container a {
+    color: hsl(120, 41%, 43%);
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        color: hsl(120, 41%, 23%);
+        text-decoration: underline;
+    }
+    &:active {
+        color: hsl(120, 41%, 63%);
+    }
+}
+
+/* Books Grid */
+
+#books-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 21px;
+
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+#new-card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid transparent;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s eas;
+
+    &:hover {
+        border: 2px solid rgb(96, 156, 96);
+        border-radius: 16px;
+    }
+}
+
+#card-img {
+    width: 146px;
+    height: 186px;
+}
+
+#card-img img {
+    width: 100%;
+    height:100%;
+    border-radius: 4px;
+}
+
+#card-details {
+    margin: 4px;
+    padding: 6px;
+}
+
+.card-title {
+    width: 100%;
+    height: 36px;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 4px;
+}
+
+#new-card:hover .card-title {
+    color: rgb(65, 155, 65);
+}
+
+.card-price {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 4px;
+}
+
+.sold-out-advertisement {
+    background-color: red;
+    color: aliceblue;
+    width: 134px;
+    height: 14px;
+    font-size: 12px;
+    padding-left: 12px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -17px;
+}
+
+#price-and-favorite {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.star-symbol,
+.star-symbol-hover,
+.star-symbol-click {
+    font-size: 40px;
+    color: gold;
+    margin-top: -8px;
+    transition: color 0.3s ease;
+}
+
+.send-announcement{
+    width: 100%;
+    color: rgb(65, 155, 65);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 12px;
+}

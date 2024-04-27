@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/crypto-pay-styles.css">
+    <link rel="stylesheet" href="../css/credit-debit-pay-styles.css">
+    <link rel="stylesheet" href="../css/residence-form-styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico/bookIco.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>The Nest of Books | Crypto Payment</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1> <a href="../templates/home.html" title="Library The Nest Of Books">Library The Nest Of Books</a></h1>
+        </div>
+    </header>
+    <main>
+        <h2 class="sub-title">Crypto Payment</h2>
+        <div id="general-container">
+            <div id="book-info-container">
+                <div id="img-container">
+                    <div class="mini-text">1 shipment <span class="free">FREE</span></div>
+                </div>
+                <div id="book-payment-container">
+                    <form id="crypto-form">
+                        <div id="crypto-type-container">
+                            <label for="crypto-type" class="labels-general">Choose Crypto: </label>
+                            <select name="crypto-type" id="crypto-type">
+                                <option value="bitcoin">Bitcoin (BTC)</option>
+                                <option value="USDT">Tether (USDT)</option>
+                            </select>    
+                        </div>
+                        <div id="crypto-payment-details-container">
+                            <p id="crypto-price"></p>
+                            <p id="total-to-pay"></p>
+                            <p id="total-amount"></p>
+                            <div id="qr-and-address-container">
+                                <img src="" alt="" id="qr-img">
+                                <div id="crypto-address-box">
+                                    <p id="address-text">Address:</p>
+                                    <div id="address-and-copy-icon">
+                                        <p id="crypto-address">18Bb4YLkSMKAP5XgTsV6TBcLDEwnQGrCg1 </p>
+                                        <i class="bi bi-files" title="Copy"></i>    
+                                    </div>
+                                </div>
+                            </div>                            
+                            <p id="address"></p>    
+                            <p id="alert-address-message"></p>
+                        </div>
+                    </form>
+                </div>
+                <div id="buttons-container">
+                    <button type="submit" id="continue-button" class="button-general">Continue</button>
+                    <button type="submit" id="change-payment-method-button">Change Payment method</button>
+                </div>
+            </div>
+            <div id="purchase-summary-container">
+                <p id="purchase-summary-title">Purchase Summary</p>
+                <p id="product-title"></p>
+                <p id="product-quantity"></p>
+                <p id="product-price"></p>
+                <p id="product-shipping-text">Free Shipping ✔</p>
+                <p id="product-total"></p>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        &copy; Library the Nest Of Books 
+    </footer>
+    
+    <script src="../js/cryptoPay.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>

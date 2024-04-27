@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/choose-payment-styles.css">
+    <link rel="stylesheet" href="../css/residence-form-styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico/bookIco.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>The Nest of Books | Choose Payment</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1> <a href="../templates/home.html" title="Library The Nest Of Books">Library The Nest Of Books</a></h1>
+        </div>
+    </header>
+    <main>
+        <h2 class="sub-title">How do you prefer to pay?</h2>
+        <div id="general-container">
+            <div id="choose-payment-container">
+                <div id="img-container">
+                    <div class="mini-text">1 shipment <span class="free">FREE</span></div>
+                </div>
+                <div id="radio-choose-container">  
+                    <div id="credit-debit-option">
+                        <input type="radio" id="radio-credit-debit" name="payment-option">
+                        <img src="../img/website/visa.png" alt="visa" title="Visa">
+                        <img src="../img/website/master-card.png" alt="masterCard" title="MasterCard">
+                        <p>Credit/Debit Card</p>
+                    </div>
+                    <div id="crypto-option">
+                        <input type="radio" id="radio-crypto" name="payment-option">
+                        <img src="../img/website/btc.png" alt="bitcoin" title="Bitcoin">
+                        <img src="../img/website/usdt.png" alt="USDT" title="USDT" class="usdt">
+                        <p>Crypto</p>
+                    </div>
+                </div>
+                <button type="submit" id="continue-button" class="button-general">Continue</button>
+            </div>
+            <div id="purchase-summary-container">
+                <p id="purchase-summary-title">Purchase Summary</p>
+                <p id="product-title"></p>
+                <p id="product-quantity"></p>
+                <p id="product-price"></p>
+                <p id="product-shipping-text">Free Shipping ✔</p>
+                <p id="product-total"></p>
+            </div>
+        </div>    
+
+    </main>
+    <footer>
+        &copy; Library the Nest Of Books 
+    </footer>
+    
+    <script src="../js/choosePayment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

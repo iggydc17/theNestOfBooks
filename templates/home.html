@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/home-styles.css">
+    <link rel="stylesheet" href="../css/general-styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico/bookIco.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>The Nest of Books | Home</title>
+</head>
+<body>
+    <header>
+        <div id="title-and-name-container">
+            <div id="title">
+                <h1> <a href="../templates/home.html" title="Library The Nest Of Books">Library The Nest Of Books</a></h1>
+            </div>
+            <div id="user-name-container">
+                <nav id="user-navbar">
+                    <ul>
+                        <a href="../templates/favs.html"><li title="Favs">Favs</li></a>
+                        <a href="../templates/buys.html"><li title="Buys">Buys</li></a>
+                        <a href="../templates/cart.html"><li title="Cart">Cart</li></a>
+                        <a href="#"><li>Ignacio</li>!</a>
+                    </ul>
+                </nav>
+                <!--User's name-->
+            </div>    
+        </div>
+        <nav id="navbar">
+            <ul>
+                <a href="../templates/home.html" title="Home" style="text-decoration: underline; color: rgb(65, 155, 65);"><li>Books Stock</li></a>
+                <a href="../templates/aboutUs.html" title="About Us"><li>About Us</li></a>
+                <a href="../templates/suggestBooksSection.html" title="Suggest a Book"><li>Suggest a Book</li></a>
+                <a href="../templates/contact.html" title="Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="books-search-form">
+            <div class="search-container">
+                <input type="text" id="search-var" placeholder="Search by Title, Author or Year...">
+                <button type="submit" id="search-button" class="button-general">Search</button>
+            </div>
+            <div class="sort-container">
+                <label for="sort-options" id="sort-by-text" class="labels-general">Sort By:</label>
+                <select id="sort-options" class="selects-general">
+                    <option value="default">Default</option>
+                    <option value="A - Z">A - Z</option>
+                    <option value="Z - A">Z - A</option>
+                    <option value="Recent Year">Recent Year</option>
+                    <option value="Ancient Year">Ancient Year</option>
+                    <option value="Lower Price">Low Price</option>
+                    <option value="Higher Price">High Price</option>
+                    <option value="Available">Available</option>
+                    <option value="Sold Out">Sold Out</option>
+                </select>
+            </div>
+        </form>
+        <h3 class="main-title">Books</h3>
+        <div id="books-grid">
+            <!--Grid of books-->
+        </div>   
+    </main>
+    <footer>
+        &copy; Library the Nest Of Books 
+    </footer>
+    
+    <script src="../js/home.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+</body>
+</html>

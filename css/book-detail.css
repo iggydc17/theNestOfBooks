@@ -1,0 +1,272 @@
+#container {
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#book-details {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: right;
+
+    overflow: hidden;
+    margin-right: 24px;
+}
+
+#title-and-star-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: -12px;
+}
+
+#img-container img {
+    width: 320px;
+    height: 468px;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 12px;
+    margin-right: 200px;
+}
+
+#book-text-details-container {
+    width: 318px;
+    height: 436px;
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#book-title {
+    font-size: 22px;
+}
+
+.star-symbol {
+    cursor: pointer;
+}
+
+#book-author {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+#book-price {
+    font-size: 30px;
+    margin-top: -8px;
+    margin-bottom: -4px;
+}
+
+#book-year {
+    margin-bottom: -4px;
+}
+
+.announcement {
+    color: rgb(65, 155, 65);
+    font-weight: bold;
+    margin-top: -8px;
+}
+
+.days {
+    color: #555;
+    font-size: 12px;
+    margin-top: -12px;
+}
+
+#quantity-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#quantity-container select {
+    border: 1px solid rgb(65, 155, 65);
+    border-radius: 4px;
+    height: 32px;
+    color: #575757;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:focus {
+        outline: none;
+        border: 2px solid rgb(96, 156, 96);
+    }
+}
+
+#quantity-container select option {
+    color: #575757;
+    font-weight: bold;
+    padding: 6px;
+    border: 1px solid rgb(65, 155, 65);
+
+    &:hover {
+        background-color: hsl(120, 24%, 49%);
+        color: aliceblue;
+    }
+}
+
+.units {
+    color: #555;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+#buttons-container {
+    width: 100%;
+    margin-top: 13px;
+}
+
+#buy-button {
+    width: 100%;
+    background-color: hsl(120, 41%, 43%);
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: hsl(120, 41%, 23%);
+    }
+
+    &:active {
+        background-color: hsl(120, 41%, 63%);
+    }
+}
+
+#add-to-cart-button {
+    width: 100%;
+    background-color: hsl(120, 41%, 85%);
+    color: hsl(120, 41%, 43%);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: hsl(120, 41%, 80%);
+    }
+
+    &:active {
+        background-color: hsl(120, 41%, 75%);
+    }
+}
+
+#synopsis-container {
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 32px;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.synopsis-title {
+    color: hsl(120, 41%, 43%);
+}
+
+/* Second container -------------------------------------------------------------------------------------------*/
+
+
+#second-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    width: 96.5%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.other-products {
+    color: hsl(120, 41%, 43%);
+    margin-bottom: 16px; 
+}
+
+#other-books-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+    padding: 20px;
+}
+
+.other-book-card {
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.other-book-details {
+    padding: 12px;
+}
+
+#other-books-cards img {
+    width: 100%;
+    height: 267px; 
+    border-radius: 8px 8px 0 0;
+}
+
+.other-book-price {
+    font-size: 26px;
+    margin-top: 8px;
+}
+
+.other-book-title {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.announcement-other {
+    color: hsl(120, 41%, 43%);
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+#payment-methods {
+    width: 318px;
+    height: 371px;
+    padding: 16px;
+    margin: 16px;
+    margin-top: 75px;
+    margin-left: 74px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#payment-methods img {
+    height: 26px;
+    margin-top: 12px;
+    margin-right: 16px;
+}
+
+#bank-of-america {
+    height: 70px;
+}
+
+#payment-option {
+    margin-top: 30px;
+}
+.payment {
+    font-weight: bold;
+}
+
+#credit-card {
+    margin: 24px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/suggest-book-styles.css">
+    <link rel="stylesheet" href="../css/home-styles.css">
+    <link rel="stylesheet" href="../css/general-styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico/bookIco.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>The Nest of Books | Suggest Book</title>
+</head>
+<body>
+    <header>
+        <div id="title-and-name-container">
+            <div id="title">
+                <h1> <a href="../templates/home.html" title="Library The Nest Of Books">Library The Nest Of Books</a></h1>
+            </div>
+            <div id="user-name-container">
+                <nav id="user-navbar">
+                    <ul>
+                        <a href="../templates/favs.html"><li title="Favs">Favs</li></a>
+                        <a href="../templates/buys.html"><li title="Buys">Buys</li></a>
+                        <a href="../templates/cart.html"><li title="Cart">Cart</li></a>
+                        <a href="#"><li>Ignacio</li>!</a>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+        <nav id="navbar">
+            <ul>
+                <a href="../templates/home.html" title="Home"><li>Books Stock</li></a>
+                <a href="../templates/aboutUs.html" title="About Us"><li>About Us</li></a>
+                <a href="../templates/suggestBooksSection.html" title="Suggest a Book" style="text-decoration: underline; color: rgb(65, 155, 65);"><li>Suggest a Book</li></a>
+                <a href="../templates/contact.html" title="Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="suggest-books-container">
+            <h3 class="main-title">Suggest us a book, we will soon get it and put it on sale:</h3>
+            <form id="suggest-book-form">
+                <label for="suggest-book-name" class="labels-general">Name: </label>
+                <input id="suggest-book-name" type="text" class="input-general" placeholder="Enter the book's name" required>
+                <label for="suggest-book-author" class="labels-general">Author: </label>
+                <input id="suggest-book-author" type="text" class="input-general" placeholder="Enter the author's name" required>
+                <label for="suggest-book-year" class="labels-general">Year: </label>
+                <input id="suggest-book-year" type="text" class="input-general" placeholder="Enter the book's year" required>
+                <button type="submit" id="suggest-book-button" class="button-general">Suggest</button>
+                <!---The new suggested book has been added successfully!-->
+            </form>
+        </div>
+        <div id="suggest-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody id="suggest-book-table">
+                    <!--<tr>
+                            <td>
+                            </td> 
+                        </tr>-->
+                </tbody>
+            </table>
+        </div>
+        <h3 id="empty-message">The suggest book's list it's empty.</h3>
+    </main>
+    <footer>
+        &copy; Library the Nest Of Books 
+    </footer>
+    
+    <script src="../js/suggestBooks.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>

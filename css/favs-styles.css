@@ -1,0 +1,155 @@
+.empty-title {
+    color: rgb(65, 155, 65);
+}
+
+#new-book-div {
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    cursor: pointer;
+}
+
+.fav-book {
+    display: flex;
+    flex-flow: row wrap;
+
+    padding: 12px;
+    border-bottom: 1px solid lightgray;
+}
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.favs-books-img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 4px;
+}
+
+.favs-sold-out-advertisement {
+    width: 90px;
+    height: 14px;
+    background-color: red;
+    color: aliceblue;
+    font-size: 12px;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 14px;
+    margin-left: 28px;
+    margin-top: -6px;
+}
+
+#favs-card-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+    width: 70%;
+    text-align: left;
+    padding-left: 56px;
+}
+
+.favs-title {
+    font-size: 20px;
+}
+
+.favs-price {
+    font-size: 22px;
+}
+
+
+.favs-send-announcement {
+    color: rgb(65, 155, 65);
+    font-weight: bold;
+}
+
+.delete-button {
+    color: hsl(210, 100%, 56%);
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    margin-left: -4px;
+    cursor: pointer;
+
+    &:hover {
+        color: hsl(210, 100%, 36%);
+    }
+    &:active {
+        color: hsl(210, 100%, 76%);
+    }
+}
+
+.clear-all-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(120, 41%, 43%);
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    margin-left: 80%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: hsl(120, 41%, 23%);
+    }
+
+    &:active {
+        background-color: hsl(120, 41%, 63%);
+    }
+}
+
+#discover-books-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 16px auto;
+}
+
+#discover-books-container img {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin-bottom: 32px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+#discover-books-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.first-message {
+    color: black;
+    font-size: 20px;
+}
+
+.second-message {
+    color: #555;
+    font-weight: bold;
+}

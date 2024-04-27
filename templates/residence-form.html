@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/residence-form-styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico/bookIco.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>The Nest of Books | Residence Form</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1> <a href="../templates/home.html" title="Library The Nest Of Books">Library The Nest Of Books</a></h1>
+        </div>
+    </header>
+    <main>
+        <h2 class="sub-title">My Residence</h2>
+        <div id="general-container">
+            <div id="residence-form-container">
+                <div id="img-container">
+                    <div class="mini-text">1 shipment <span class="free">FREE</span></div>
+                </div>    
+                <form id="form-container">
+                    <label for="residence-address" class="labels-general">Residence Address: </label>
+                    <input type="text" class="input-general" id="residence-address" placeholder="Enter your address" required>
+                    <div id="number-residence-and-cp-container">
+                        <label for="residence-address-number" class="labels-general">Number Address: </label>
+                        <input type="text" class="input-general" id="residence-address-number" placeholder="Address n°" required>
+                        <label for="CP" class="labels-general cp">C.P.: </label>
+                        <input type="text" class="input-general" id="CP" placeholder="Enter your C.P." required>
+                    </div>
+                    <label for="residence-address-city" class="labels-general">City: </label>    
+                    <input type="text" class="input-general" id="residence-address-city" placeholder="Enter the name of your city" required>
+                    <label for="residence-address-state" class="labels-general">State: </label>    
+                    <input type="text" class="input-general" id="residence-address-state" placeholder="Enter the name of your state" required>
+                    <label for="full-name" class="labels-general">Full Name: </label>
+                    <input type="tel" class="input-general" id="full-name" placeholder="Enter your full name" required>
+                    <label for="telephone" class="labels-general">Phone Number: </label>
+                    <input type="tel" class="input-general" id="telephone" placeholder="Enter your phone number" required>
+                    <button type="submit" class="button-general" id="continue-button">Continue</button>
+                </form>
+            </div>
+            <div id="purchase-summary-container">
+                <p id="purchase-summary-title">Purchase Summary</p>
+                <p id="product-quantity"></p>
+                <p id="product-price"></p>
+                <p id="product-shipping-text">Free Shipping ✔</p>
+                <p id="product-total"></p>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        &copy; Library the Nest Of Books 
+    </footer>
+    
+    <script src="../js/residenceForm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>

@@ -1,0 +1,230 @@
+#main-content-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+    max-width: 1200px;
+}
+
+#general-container {
+    width: 60%;
+    border-radius: 8px;
+    margin-right: 50px;
+}
+
+.classList-container {
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    column-gap: 32px;
+}
+
+#detail-purchased-book-container{
+    margin-top: -24px;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#total-pay-container {
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+#title-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+    margin-top: 24px;
+}
+
+/* Book */
+#img-title-quantity-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+#img-title-quantity-container img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantity-and-price {
+    color: #555;
+}
+
+.author {
+    font-weight: bold;
+    color: #555;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: -12px;
+    margin-left: 24px;
+    padding-bottom: 24px;
+}
+
+.total-box {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total-price {
+    font-size: 18px;
+}
+
+
+/* Residence*/
+
+#address-container {
+    margin-left: 24px;
+    padding-bottom: 24px;
+    color: #555;
+}
+
+
+/* Payment */
+
+#payment-detail h4 {
+    border-bottom: 1px solid lightgray;
+    padding: 20px 32px 16px 32px;
+}
+
+#payment-detail-box,
+#crypto-payment-detail-box {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 0px 20px 16px 20px;
+    margin-top: -6px;
+}
+
+
+#payment-detail-box img,
+#crypto-payment-detail-box img {
+    width: 68px; 
+    height: 37px; 
+    border-radius: 20%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 100px;
+}
+
+#crypto-text-box {
+    font-size: 14px;
+    color: #555;
+    line-height: 14px;
+}
+
+.bi {
+    color: rgb(65, 155, 65);
+    font-size: 24px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    border: 1px solid lightgray;
+    margin-right: 24px;
+}
+
+/* Purchased Summary */
+
+#purchase-summary-container {
+    z-index: 0;
+    width: 400px;
+    position: sticky;
+    top: 0; 
+    bottom: 0;
+    right: 48px;
+    background-color: hsl(0, 0%, 89%);
+    border-radius: 6px;
+    padding: 32px;
+    overflow-y: auto;
+}
+
+#purchase-summary-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+#product-shipping-text {
+    border-bottom: 1px solid #b9b9b9;
+    padding-bottom: 20px;
+}
+
+#product-date {
+    font-weight: bold;
+}
+
+#product-total{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#payment-method,
+#crypto-address,
+#card-number {
+    color: #555;
+    font-size: 14px;
+}
+
+#product-title {
+    margin-top: 32px;
+}
+
+#product-total {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+#product-shipping-text{
+    font-weight: bold;
+    color: rgb(65, 155, 65);
+} 
+
+#buy-again-button {
+    width: 100%;
+    background-color: hsl(120, 41%, 43%);
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 36px;
+    margin-top: 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: hsl(120, 41%, 23%);
+    }
+
+    &:active {
+        background-color: hsl(120, 41%, 63%);
+    }
+}
+
+#residence-details-container,
+#payment-details-container {
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/cart-styles.css">
+    <link rel="stylesheet" href="../css/general-styles.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico/bookIco.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <title>The Nest of Books | Cart</title>
+</head>
+<body>
+    <header>
+        <div id="title-and-name-container">
+            <div id="title">
+                <h1> <a href="../templates/home.html" title="Library The Nest Of Books">Library The Nest Of Books</a></h1>
+            </div>
+            <div id="user-name-container">
+                <nav id="user-navbar">
+                    <ul>
+                        <a href="../templates/favs.html"><li title="Favs">Favs</li></a>
+                        <a href="../templates/buys.html"><li title="Buys">Buys</li></a>
+                        <a href="../templates/cart.html"><li title="Cart">Cart</li></a>
+                        <a href="#"><li>Ignacio</li>!</a>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+        <nav id="navbar">
+            <ul>
+                <a href="../templates/home.html" title="Home"><li>Books Stock</li></a>
+                <a href="../templates/aboutUs.html" title="About Us"><li>About Us</li></a>
+                <a href="../templates/suggestBooksSection.html" title="Suggest a Book"><li>Suggest a Book</li></a>
+                <a href="../templates/contact.html" title="Contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="general-container">
+            <div id="cart-and-purchase-summary-container">
+                <div id="cart-container">
+                    <div id="cart-items"> <h3>Cart Items</h3></div>
+                    <!--Cart items-->
+                    <div id="free-shipping-container">
+                        <div id="free-shipping-box">
+                            <div class="shipment">Shipment</div>
+                            <div class="free">Free ✔</div>
+                        </div>
+                        <div id="take-advantage-message">
+                            Take advantage of your free shipping by adding more. <a href="../templates/home.html">See more books > </a> 
+                        </div>
+                    </div>
+                </div>
+                <div id="purchase-summary-container">
+                    <p id="purchase-summary-title">Purchase Summary</p>
+                    <p id="product-quantity"></p>
+                    <p id="product-shipping-text">Free Shipping ✔</p>
+                    <p id="product-total"></p>
+                    <button id="continue-shopping-button">Continue Shopping</button>
+                </div>
+            </div> 
+        </div>
+        <div id="other-books-container">
+            <h2 class="title">Recommendations for you</h2>
+            <div id="book-cards" class="book-cards-container">
+                <!--Grid with Random books-->
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; Library the Nest Of Books 
+    </footer>
+    
+    <script src="../js/cart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+</body>
+</html>
